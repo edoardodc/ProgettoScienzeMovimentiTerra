@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcR-gX-AMb">
-                                <rect key="frame" x="31" y="-13" width="8" height="98"/>
+                                <rect key="frame" x="208" y="-43" width="30" height="102"/>
                                 <animations/>
                                 <string key="text">Per scoprire i movimenti della 
 Terra e della luna</string>
@@ -68,44 +68,12 @@ Terra e della luna</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gabriele Panzeri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlb-jb-n3Q">
-                                <rect key="frame" x="138" y="0.0" width="17" height="32"/>
+                                <rect key="frame" x="138" y="0.0" width="2" height="28"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Scienze: i movimenti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARL-jF-5Cg">
-                                <rect key="frame" x="0.0" y="0.0" width="21" height="78"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3zm-p0-grt">
-                                <rect key="frame" x="95" y="0.0" width="23" height="42"/>
-                                <animations/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="284" id="555-bH-oBO"/>
-                                    <constraint firstAttribute="width" constant="701" id="xQf-Rd-Mb0"/>
-                                </constraints>
-                                <mutableString key="text">La Terra non è immobile nello spazio, ruota su sé stessa e gira intorno al Sole oltre a compiere altri movimenti minori. Questi spostamenti non sono direttamente percepiti dall'uomo, poiché ogni cosa che si trova sulla superficie terrestre si sposta insieme ad essa, piuttosto sembra che siano Sole, Luna e stelle a muoversi intorno ad essa.  Solamente nel Seicento, dopo le osservazioni di Galileo, si comprese a fondo la verità. Anche per quanto riguarda il moto di rivoluzione fondamentali furono le osservazioni di Galileo e di Newton.</mutableString>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-9y-gIa">
-                                <rect key="frame" x="163" y="-2" width="17" height="30"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
-                                <state key="normal" title="Avanti">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="buttonAvanti1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUA-ee-ihO"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3e-V1-Lzd">
                                 <rect key="frame" x="175" y="175" width="250" height="250"/>
                                 <animations/>
@@ -115,11 +83,67 @@ Terra e della luna</string>
                                 </constraints>
                                 <state key="normal" image="Terra"/>
                                 <connections>
-                                    <action selector="ruotaMondo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gY1-k0-URT"/>
+                                    <action selector="ruotaMondo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="X5T-NC-SgH"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moto di rotazione" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFv-tp-BRl">
-                                <rect key="frame" x="0.0" y="101" width="600" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Scienze: i movimenti" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARL-jF-5Cg">
+                                <rect key="frame" x="0.0" y="0.0" width="21" height="78"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="65"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3zm-p0-grt">
+                                <rect key="frame" x="82" y="-142" width="32" height="234"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="555-bH-oBO"/>
+                                    <constraint firstAttribute="width" constant="701" id="xQf-Rd-Mb0"/>
+                                </constraints>
+                                <string key="text">La Terra non è immobile nello spazio, ruota su sé stessa e gira intorno al Sole oltre a compiere altri movimenti minori. Questi spostamenti non sono direttamente percepiti dall'uomo, poiché ogni cosa che si trova sulla superficie terrestre si sposta insieme ad essa, piuttosto sembra che siano Sole, Luna e stelle a muoversi intorno ad essa.  Solamente nel Seicento, dopo le osservazioni di Galileo, si comprese a fondo la verità. Anche per quanto riguarda il moto di rivoluzione fondamentali furono le osservazioni di Galileo e di Newton.</string>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3a-9y-gIa">
+                                <rect key="frame" x="163" y="-2" width="21" height="37"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Avanti">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAvanti1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fUA-ee-ihO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="txc-BP-w28">
+                                <rect key="frame" x="259" y="28" width="137" height="4"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <state key="normal" title="Avanti">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAvanti2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oCT-eM-yW1"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tQz-OK-ER9">
+                                <rect key="frame" x="185" y="-4" width="240" height="24"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="701" id="1Up-4h-OTB"/>
+                                    <constraint firstAttribute="height" constant="284" id="k7S-Tw-h1q"/>
+                                </constraints>
+                                <mutableString key="text">La forma della Terra non é perfettamente sferica, esiste una differenza tra il raggio equatoriale e il raggio polare pari a 21.5 km, per cui si ha un leggero schiacciamento ai poli. Tale forma é conseguenza del movimento di rotazione intorno all'asse ideale che congiunge i due poli e legata anche al fatto che la Terra si comporta come un corpo dotato di una certa elasticità. La dimostrazione più recente della rotazione terrestre é data dai satelliti artificiali, i quali devono avere un movimento di rotazione uguale a quello della Terra per ottenere immagini fotografiche non mosse analogamente a quanto avviene nell'osservazione e nella fotografia da un telescopio terrestre che deve essere dotato di un motore per inseguire gli oggetti celesti. In passato Galileo formulò l'ipotesi che un corpo in caduta libera da un punto fisso non avviene secondo la verticale ma subisce una deviazione tanto maggiore quanto più elevato é il punto di partenza. Questo é legato al fatto che il movimento di rotazione imprime una velocità angolare maggiore man mano che aumenta la distanza dal centro della Terra.</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Moto di rotazione" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFv-tp-BRl">
+                                <rect key="frame" x="29" y="35" width="600" height="7"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="60"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
@@ -128,9 +152,11 @@ Terra e della luna</string>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" patternImage="55B6447B-4514-425B-9B76-9F23746732AC" colorSpace="pattern"/>
+                        <color key="tintColor" patternImage="BE2F43A0-A270-45F4-B6F1-A594D1B0092C" colorSpace="pattern"/>
                         <constraints>
+                            <constraint firstItem="txc-BP-w28" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="850" id="018-0z-ho0"/>
                             <constraint firstItem="ARL-jF-5Cg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="0a0-fY-XsX"/>
+                            <constraint firstItem="tQz-OK-ER9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="525" id="1B1-8j-3f5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="FFv-tp-BRl" secondAttribute="trailing" constant="-20" id="1xq-Rr-PQ0"/>
                             <constraint firstItem="M3e-V1-Lzd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="220" id="3dQ-fm-1h5"/>
                             <constraint firstItem="GEX-ou-9OK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="340" id="7Mp-jv-POO"/>
@@ -152,6 +178,7 @@ Terra e della luna</string>
                             <constraint firstItem="FFv-tp-BRl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="Wi9-X0-Wwb"/>
                             <constraint firstItem="z9j-9l-eaT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="491" id="Wrc-LE-jBg"/>
                             <constraint firstItem="qlb-jb-n3Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="260" id="XTn-6M-LCj"/>
+                            <constraint firstItem="tQz-OK-ER9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Ykz-W3-a1P"/>
                             <constraint firstItem="YcR-gX-AMb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-11" id="cqy-Uh-mtb"/>
                             <constraint firstItem="3zm-p0-grt" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="510" id="gGJ-CK-Gfi"/>
                             <constraint firstItem="Dvz-Se-bz5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="gZO-MT-nys"/>
@@ -163,6 +190,7 @@ Terra e della luna</string>
                             <constraint firstItem="ARL-jF-5Cg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="wcL-Ar-zAy"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Dvz-Se-bz5" secondAttribute="trailing" constant="-20" id="yS6-RC-5Cg"/>
                             <constraint firstItem="GEX-ou-9OK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="207" id="yhe-dZ-F8g"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="txc-BP-w28" secondAttribute="trailing" constant="325" id="ze5-NV-YH8"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -177,22 +205,24 @@ Terra e della luna</string>
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
                     <connections>
-                        <outlet property="constrainsTopTitle2" destination="Wi9-X0-Wwb" id="lkQ-Vq-kml"/>
                         <outlet property="constraintLeadingAvanti" destination="ieT-Kh-aAu" id="dF3-Dk-Fz9"/>
                         <outlet property="constraintLeadingInizia" destination="yhe-dZ-F8g" id="Q6E-D0-OHD"/>
                         <outlet property="constraintLeadingLuna" destination="OHw-tw-ATA" id="WnK-RE-LLm"/>
                         <outlet property="constraintLeadingTextView" destination="IBK-OK-vmg" id="sMA-aL-22P"/>
+                        <outlet property="constraintLeadingTextfield2" destination="Ykz-W3-a1P" id="NHm-eu-G9q"/>
                         <outlet property="constraintSubTitle2" destination="XTn-6M-LCj" id="O4s-q0-nQS"/>
                         <outlet property="constraintTopSubTitle" destination="LlW-d7-Til" id="4mq-Ro-sGT"/>
                         <outlet property="constraintTopTerra" destination="GUt-gT-MOv" id="fPN-RS-u0H"/>
                         <outlet property="constraintTopTitle" destination="wcL-Ar-zAy" id="xMW-rc-bDE"/>
                         <outlet property="constraintTopTitle2" destination="L76-8f-xUR" id="TmV-7t-GqY"/>
-                        <outlet property="constraintTralingTerra2" destination="Abp-Bd-lXN" id="YRu-ja-nN7"/>
+                        <outlet property="constraintTopTitle3" destination="Wi9-X0-Wwb" id="UVO-Xp-q3A"/>
+                        <outlet property="constraintTralingTerra2" destination="Abp-Bd-lXN" id="N3y-oQ-SZe"/>
+                        <outlet property="constraintTrealingAvanti2" destination="ze5-NV-YH8" id="Bz7-VV-iEs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="294" y="330"/>
+            <point key="canvasLocation" x="312" y="346"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="9Pq-gk-2IO">
@@ -234,7 +264,6 @@ Terra e della luna</string>
         <!--Second View-->
         <scene sceneID="oLM-XS-06p">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="msA-PK-c8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="d9C-J3-rx9" customClass="SecondView" customModule="Edoardo_DC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fF6-JE-99t"/>
@@ -279,12 +308,13 @@ Terra e della luna</string>
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msA-PK-c8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="986" y="339"/>
         </scene>
     </scenes>
     <resources>
-        <image name="55B6447B-4514-425B-9B76-9F23746732AC" width="320" height="460">
+        <image name="BE2F43A0-A270-45F4-B6F1-A594D1B0092C" width="320" height="460">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -10108,7 +10138,7 @@ AAABAAEAAAEGAAMAAAABAAIAAAERAAQAAAAFAAj80gESAAMAAAABAAEAAAEVAAMAAAABAAQAAAEWAAMA
 AAABAGYAAAEXAAQAAAAFAAj8vgEcAAMAAAABAAEAAAFSAAMAAAABAAEAAAFTAAMAAAAEAAj85odzAAcA
 AAxIAAj87gAAAAAACAAIAAgACAAB/gAAAf4AAAH+AAAB/gAAAQQAAAAACAAB/ggAA/wIAAX6CAAH+AgA
 AQABAAEAAQAADEhMaW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBz
-UkdCAAAAAAAAAAAAAAABAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+UkdCAAAAAAAAAAAAAAAAAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQA
 AAIEAAAAFHJYWVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRtbmQAAAJUAAAAcGRtZGQA
 AALEAAAAiHZ1ZWQAAANMAAAAhnZpZXcAAAPUAAAAJGx1bWkAAAP4AAAAFG1lYXMAAAQMAAAAJHRlY2gA

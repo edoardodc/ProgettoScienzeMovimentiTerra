@@ -478,6 +478,7 @@
 				EB4ABE141C14552F00935DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB4ABE151C14552F00935DAC /* Build configuration list for PBXNativeTarget "Edoardo DCTests" */ = {
 			isa = XCConfigurationList;
@@ -486,6 +487,7 @@
 				EB4ABE171C14552F00935DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EB4ABE181C14552F00935DAC /* Build configuration list for PBXNativeTarget "Edoardo DCUITests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +496,7 @@
 				EB4ABE1A1C14552F00935DAC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

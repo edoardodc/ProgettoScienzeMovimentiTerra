@@ -10,11 +10,33 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBAction func buttonAvanti2(sender: AnyObject) {
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(3, animations: {
+            self.constraintTopTitle3.constant = -1000
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintLeadingTextfield2.constant = -1000
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintTrealingAvanti2.constant = -1000
+            self.view.layoutIfNeeded()
+        })
+        
+
+        
+    }
+
  
     @IBAction func ruotaMondo(sender: AnyObject) {
         let terra2 = UIImageView()
         terra2.image = UIImage(named: "Terra")
-        terra2.frame = CGRect(x: 71, y: 500, width: 250, height: 250)
+        terra2.frame = CGRect(x: 268, y:240
+            , width: 250, height: 250)
         self.view.addSubview(terra2)
         let fullRotation = CGFloat(M_PI * 2)
         let duration = 2.0
@@ -34,6 +56,7 @@ class ViewController: UIViewController {
             })
             
             }, completion: {finished in
+                
         })
 
     }
@@ -46,7 +69,7 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
             self.view.layoutIfNeeded()
         })
-        UIView.animateWithDuration(1, animations: {
+        UIView.animateWithDuration(3, animations: {
             self.constraintSubTitle2.constant = -1000
             self.view.layoutIfNeeded()
         })
@@ -57,13 +80,23 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         self.view.layoutIfNeeded()
-        UIView.animateWithDuration(3, animations: {
+        UIView.animateWithDuration(5, animations: {
             self.constraintLeadingAvanti.constant = -1000
             self.view.layoutIfNeeded()
         })
         self.view.layoutIfNeeded()
         UIView.animateWithDuration(3, animations: {
-            self.constrainsTopTitle2.constant = 81
+            self.constraintTopTitle3.constant = 81
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintLeadingTextfield2.constant = 12
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintTrealingAvanti2.constant = 325
             self.view.layoutIfNeeded()
         })
         
@@ -76,7 +109,7 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         self.view.layoutIfNeeded()
-        UIView.animateWithDuration(2, animations: {
+        UIView.animateWithDuration(5, animations: {
             self.constraintTopSubTitle.constant = -500
             self.view.layoutIfNeeded()
         })
@@ -103,7 +136,7 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
             self.view.layoutIfNeeded()
             })
-            UIView.animateWithDuration(1, animations: {
+            UIView.animateWithDuration(3, animations: {
                 self.constraintSubTitle2.constant = 260
                 self.view.layoutIfNeeded()
             })
@@ -118,14 +151,11 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         self.view.layoutIfNeeded()
-        UIView.animateWithDuration(3, animations: {
+        UIView.animateWithDuration(5, animations: {
             self.constraintLeadingAvanti.constant = 300
             self.view.layoutIfNeeded()
         })
-
         
-        
-
 
     }
     
@@ -147,11 +177,15 @@ class ViewController: UIViewController {
     
         @IBOutlet weak var constraintTopTerra: NSLayoutConstraint!
     
-    @IBOutlet weak var constrainsTopTitle2: NSLayoutConstraint!
+    @IBOutlet weak var constraintTopTitle3: NSLayoutConstraint!
+   
 
     @IBOutlet weak var constraintLeadingAvanti: NSLayoutConstraint!
     @IBOutlet weak var constraintLeadingTextView: NSLayoutConstraint!
     
+    @IBOutlet weak var constraintLeadingTextfield2: NSLayoutConstraint!
+    
+    @IBOutlet weak var constraintTrealingAvanti2: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -165,11 +199,12 @@ class ViewController: UIViewController {
         constraintTopTitle2.constant = -1000
         constraintSubTitle2.constant = -1000
         constraintTralingTerra2.constant = -1000
-      
         constraintLeadingTextView.constant = -1000
         constraintLeadingAvanti.constant = -1000
-        constrainsTopTitle2.constant = -1000
-       
+        constraintTopTitle3.constant = -1000
+        constraintLeadingTextfield2.constant = -1000
+        constraintTrealingAvanti2.constant = -1000
+        
         
         //////where are a moment later?//////////////
        
