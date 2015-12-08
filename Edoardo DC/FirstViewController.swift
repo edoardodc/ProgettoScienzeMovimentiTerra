@@ -9,6 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+
+  
+    @IBAction func buttonToccami(sender: AnyObject) {
+        
+    }
+    
+    
+    
     
     @IBAction func buttonAvanti2(sender: AnyObject) {
         self.view.layoutIfNeeded()
@@ -17,7 +25,7 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         self.view.layoutIfNeeded()
-        UIView.animateWithDuration(5, animations: {
+        UIView.animateWithDuration(3, animations: {
             self.constraintLeadingTextfield2.constant = -1000
             self.view.layoutIfNeeded()
         })
@@ -27,7 +35,32 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
         })
         
-
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintTerra1.constant = -1000
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintToccamiLeading.constant = 300
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintMotoRivoluzione.constant = 81
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(6, animations: {
+            self.constraintTextFieldMotoDIRotazione.constant = 12
+            self.view.layoutIfNeeded()
+        })
+        
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(6, animations: {
+            self.constraintAvantiMotoDiRivoluzione.constant = 300
+            self.view.layoutIfNeeded()
+        })
         
     }
 
@@ -140,12 +173,7 @@ class ViewController: UIViewController {
                 self.constraintSubTitle2.constant = 260
                 self.view.layoutIfNeeded()
             })
-            self.view.layoutIfNeeded()
-            UIView.animateWithDuration(3, animations: {
-                self.constraintTralingTerra2.constant = 230
-                self.view.layoutIfNeeded()
-            })
-        self.view.layoutIfNeeded()
+                   self.view.layoutIfNeeded()
         UIView.animateWithDuration(3, animations: {
             self.constraintLeadingTextView.constant = 15
             self.view.layoutIfNeeded()
@@ -155,15 +183,25 @@ class ViewController: UIViewController {
             self.constraintLeadingAvanti.constant = 300
             self.view.layoutIfNeeded()
         })
-        
+       
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(3, animations: {
+            self.constraintTerra1.constant = 230
+            self.view.layoutIfNeeded()
+        })
 
     }
     
     /////declare constraint1/////////////////////////
     @IBOutlet weak var constraintTopTitle2: NSLayoutConstraint!
     
+    @IBOutlet weak var constraintAvantiMotoDiRivoluzione: NSLayoutConstraint!
+    
+    
     @IBOutlet weak var constraintLeadingInizia: NSLayoutConstraint!
     
+    @IBOutlet weak var constraintTextFieldMotoDIRotazione: NSLayoutConstraint!
+    @IBOutlet weak var constraintToccamiLeading: NSLayoutConstraint!
     @IBOutlet weak var constraintTopTitle: NSLayoutConstraint!
     
     @IBOutlet weak var constraintTopSubTitle: NSLayoutConstraint!
@@ -172,13 +210,13 @@ class ViewController: UIViewController {
    
     @IBOutlet weak var constraintSubTitle2: NSLayoutConstraint!
     
-    
-    @IBOutlet weak var constraintTralingTerra2: NSLayoutConstraint!
+    @IBOutlet weak var constraintTerra1: NSLayoutConstraint!
     
         @IBOutlet weak var constraintTopTerra: NSLayoutConstraint!
     
     @IBOutlet weak var constraintTopTitle3: NSLayoutConstraint!
    
+    @IBOutlet weak var constraintMotoRivoluzione: NSLayoutConstraint!
 
     @IBOutlet weak var constraintLeadingAvanti: NSLayoutConstraint!
     @IBOutlet weak var constraintLeadingTextView: NSLayoutConstraint!
@@ -198,7 +236,11 @@ class ViewController: UIViewController {
         constraintTopTerra.constant = -1000
         constraintTopTitle2.constant = -1000
         constraintSubTitle2.constant = -1000
-        constraintTralingTerra2.constant = -1000
+
+        constraintTextFieldMotoDIRotazione.constant = +1000
+        
+        constraintAvantiMotoDiRivoluzione.constant = -1000
+        
         constraintLeadingTextView.constant = -1000
         constraintLeadingAvanti.constant = -1000
         constraintTopTitle3.constant = -1000
@@ -206,6 +248,12 @@ class ViewController: UIViewController {
         constraintTrealingAvanti2.constant = -1000
         
         
+        constraintTerra1.constant = -1000
+        
+        constraintToccamiLeading.constant = -1000
+        
+        
+        constraintMotoRivoluzione.constant = -1000
         //////where are a moment later?//////////////
        
         self.view.layoutIfNeeded()
