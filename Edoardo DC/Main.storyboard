@@ -67,13 +67,6 @@ Terra e della luna</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Gabriele Panzeri" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qlb-jb-n3Q">
-                                <rect key="frame" x="138" y="0.0" width="2" height="28"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3e-V1-Lzd">
                                 <rect key="frame" x="175" y="175" width="250" height="250"/>
                                 <animations/>
@@ -93,7 +86,7 @@ Terra e della luna</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3zm-p0-grt">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="3zm-p0-grt">
                                 <rect key="frame" x="82" y="-142" width="32" height="234"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -129,7 +122,7 @@ Terra e della luna</string>
                                     <action selector="buttonAvanti2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oCT-eM-yW1"/>
                                 </connections>
                             </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tQz-OK-ER9">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="tQz-OK-ER9">
                                 <rect key="frame" x="185" y="-4" width="240" height="24"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -167,7 +160,7 @@ Terra e della luna</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-VR-l78">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="fYh-VR-l78">
                                 <rect key="frame" x="185" y="427" width="240" height="635"/>
                                 <animations/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -175,25 +168,28 @@ Terra e della luna</string>
                                     <constraint firstAttribute="width" constant="701" id="jqs-N3-ZGm"/>
                                     <constraint firstAttribute="height" constant="284" id="ygb-kW-zQB"/>
                                 </constraints>
-                                <mutableString key="text">La Terra possiede un moto di rivoluzione intorno al sole che compie in circa 365 giorni 6 ore 9 minuti. Durante questo movimento si osserva che la quotidiana proiezione del sole sulla volta celeste delinea un linea immaginaria detta eclittica: il nome deriva dal greco e significa zona del nascondimento poiché quando Terra, sole e luna si trovano allineati su tale piano, avvengono le eclissi.
+                                <string key="text">La Terra possiede un moto di rivoluzione intorno al sole che compie in circa 365 giorni 6 ore 9 minuti. Durante questo movimento si osserva che la quotidiana proiezione del sole sulla volta celeste delinea un linea immaginaria detta eclittica: il nome deriva dal greco e significa zona del nascondimento poiché quando Terra, sole e luna si trovano allineati su tale piano, avvengono le eclissi.
 L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno dei fuochi, pertanto in un punto dell'orbita chiamato perielio sarà più vicina al sole (3 gennaio) mentre l'afelio (4 luglio) rappresenta il punto più lontano.  Il raggio pari alla distanza media Terra-sole misura 149.597.871 km e viene definito Unità Astronomica.  La linea ideale che unisce perielio ed afelio si chiama linea apsidale.  L'esigua differenza della distanza che passa tra i due punti, circa 5 milioni di km, indica che l'orbita é quasi circolare, e la Terra la percorre alla velocità media di 108.000 km/h (28 km/sec).  L'asse di rotazione terrestre é inclinato di 66°33' rispetto al piano dell'eclittica e l'angolo fra il piano equatoriale e l'eclittica misura 23°27'.
-</mutableString>
+</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vPT-nQ-Ct8">
-                                <rect key="frame" x="123" y="209" width="87" height="30"/>
+                                <rect key="frame" x="366" y="202" width="87" height="30"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Avanti">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="d9C-J3-rx9" kind="show" id="Jtk-Uq-max"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" patternImage="DC10FC7C-0F24-454A-9B5F-78B87D4B55E6" colorSpace="pattern"/>
+                        <color key="tintColor" patternImage="0A135A12-E858-46F0-85A5-E6A6273A075D" colorSpace="pattern"/>
                         <constraints>
                             <constraint firstItem="txc-BP-w28" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="850" id="018-0z-ho0"/>
                             <constraint firstItem="ARL-jF-5Cg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="0a0-fY-XsX"/>
@@ -215,7 +211,6 @@ L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno 
                             <constraint firstItem="X8y-Ed-I6M" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="556" id="GUt-gT-MOv"/>
                             <constraint firstItem="fYh-VR-l78" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="HNZ-RG-W3Z"/>
                             <constraint firstItem="3zm-p0-grt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="IBK-OK-vmg"/>
-                            <constraint firstItem="qlb-jb-n3Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="160" id="IIp-3I-8m2"/>
                             <constraint firstItem="ARL-jF-5Cg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Knu-XK-U5d"/>
                             <constraint firstItem="Dvz-Se-bz5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="34" id="L76-8f-xUR"/>
                             <constraint firstItem="YcR-gX-AMb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="190" id="LlW-d7-Til"/>
@@ -226,7 +221,6 @@ L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno 
                             <constraint firstAttribute="trailingMargin" secondItem="ARL-jF-5Cg" secondAttribute="trailing" constant="-20" id="Tfk-Fc-GN4"/>
                             <constraint firstItem="FFv-tp-BRl" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="81" id="Wi9-X0-Wwb"/>
                             <constraint firstItem="z9j-9l-eaT" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="491" id="Wrc-LE-jBg"/>
-                            <constraint firstItem="qlb-jb-n3Q" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="260" id="XTn-6M-LCj"/>
                             <constraint firstItem="tQz-OK-ER9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="12" id="Ykz-W3-a1P"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3hf-7h-TYq" secondAttribute="trailing" constant="-20" id="abt-rq-wSC"/>
                             <constraint firstItem="YcR-gX-AMb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-11" id="cqy-Uh-mtb"/>
@@ -264,7 +258,6 @@ L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno 
                         <outlet property="constraintLeadingTextView" destination="IBK-OK-vmg" id="sMA-aL-22P"/>
                         <outlet property="constraintLeadingTextfield2" destination="Ykz-W3-a1P" id="NHm-eu-G9q"/>
                         <outlet property="constraintMotoRivoluzione" destination="1JJ-w1-j90" id="GEG-0c-aYV"/>
-                        <outlet property="constraintSubTitle2" destination="XTn-6M-LCj" id="O4s-q0-nQS"/>
                         <outlet property="constraintTerra1" destination="Abp-Bd-lXN" id="FpE-cf-ygr"/>
                         <outlet property="constraintTextFieldMotoDIRotazione" destination="HNZ-RG-W3Z" id="NbS-vJ-Bf2"/>
                         <outlet property="constraintToccamiLeading" destination="7NZ-yR-FEZ" id="mdI-u7-fOX"/>
@@ -274,11 +267,13 @@ L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno 
                         <outlet property="constraintTopTitle2" destination="L76-8f-xUR" id="TmV-7t-GqY"/>
                         <outlet property="constraintTopTitle3" destination="Wi9-X0-Wwb" id="UVO-Xp-q3A"/>
                         <outlet property="constraintTrealingAvanti2" destination="ze5-NV-YH8" id="Bz7-VV-iEs"/>
+                        <outlet property="textView1" destination="3zm-p0-grt" id="rX5-4d-fBm"/>
+                        <outlet property="textView3" destination="fYh-VR-l78" id="WJb-kg-saR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="365" y="312"/>
+            <point key="canvasLocation" x="296" y="339"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="9Pq-gk-2IO">
@@ -300,7 +295,7 @@ L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno 
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtP-6e-mN8">
-                                <rect key="frame" x="299" y="304" width="158" height="111"/>
+                                <rect key="frame" x="280" y="244" width="158" height="111"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Button"/>
@@ -320,6 +315,7 @@ L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno 
         <!--Second View-->
         <scene sceneID="oLM-XS-06p">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="msA-PK-c8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="d9C-J3-rx9" customClass="SecondView" customModule="Edoardo_DC" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fF6-JE-99t"/>
@@ -329,48 +325,140 @@ L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno 
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Terra" translatesAutoresizingMaskIntoConstraints="NO" id="9Vh-CT-7uh">
-                                <rect key="frame" x="256" y="229" width="250" height="250"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2C1-EP-hdF">
+                                <rect key="frame" x="71" y="-24" width="32" height="84"/>
                                 <animations/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JLy-HA-u7G">
-                                <rect key="frame" x="288" y="284" width="202" height="139"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <state key="normal" title="I movimenti della Luna">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IA2-NU-0tb">
+                                <rect key="frame" x="0.0" y="0.0" width="30" height="48"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="84"/>
-                                <state key="normal" title="Button"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cHG-N4-K2i">
+                                <rect key="frame" x="11" y="-6" width="28" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Inizia">
+                                    <color key="titleColor" red="1" green="0.59607843140000005" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
-                                    <action selector="buttonRuotaTerra2:" destination="d9C-J3-rx9" eventType="touchUpInside" id="dub-Rd-ogb"/>
+                                    <action selector="buttonInizia:" destination="d9C-J3-rx9" eventType="touchUpInside" id="4B0-Kd-CuK"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9U-T2-5ry">
-                                <rect key="frame" x="288" y="472" width="186" height="64"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Luna" translatesAutoresizingMaskIntoConstraints="NO" id="S3q-H6-8uP">
+                                <rect key="frame" x="20" y="-9" width="52" height="53"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="85M-53-Xkv"/>
+                                    <constraint firstAttribute="height" constant="250" id="Acs-xu-UlP"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="justified" translatesAutoresizingMaskIntoConstraints="NO" id="onf-uK-B0p">
+                                <rect key="frame" x="137" y="-50" width="117" height="81"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="cKk-eB-liF"/>
+                                    <constraint firstAttribute="width" constant="701" id="eQn-9s-pBQ"/>
+                                </constraints>
+                                <mutableString key="text">La Luna è l'unico satellite naturale della Terra. Orbita ad una distanza di circa 380.000 km dalla Terra, abbastanza vicino da renderla visibile ad occhio nudo e da distinguerne alcuni rilievi sulla superficie. Le caratteristiche principali sono: 
+Raggio medio: 1738Km
+Massa: 1/81 della Terra
+Gravita: 1/6 della Terra
+Non ha un atmosfera
+Crateri: Sono presenti molti crateri, prodotti dalla caduta di meteoriti
+Territori: Ha zone pianeggianti, distinte in mari, e terre alte
+Sembra che nel sottosuolo polare ci sia acqua ghiacciata 
+
+La Luna è in rotazione sincrona(Un corpo orbitante si dice in rotazione sincrona quando il suo periodo di rotazione è uguale al suo periodo di rivoluzione.)  perciò rivolge sempre la stessa faccia verso la Terra. 
+La Luna agisce sulle maree e sulla stabilità dell'asse di rotazione terrestre.
+Il suo simbolo astronomico “☾” è una rappresentazione stilizzata della sua fase calante. La faccia visibile della Luna è coperta da circa 300 000 crateri (contando quelli con un diametro di almeno 1 km).
+</mutableString>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Cos'è la Luna?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfX-gZ-y8n">
+                                <rect key="frame" x="97" y="-18" width="32" height="72"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="24q-in-C9s">
+                                <rect key="frame" x="249" y="-18" width="102" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Avanti">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="qNX-3e-bgk" kind="show" id="gi4-rC-9UH"/>
+                                    <action selector="AvantiPerAndareAiMotiDiRivoluzione:" destination="d9C-J3-rx9" eventType="touchUpInside" id="Xvf-Cv-CJO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Moto di rivoluzione" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fgw-GX-jGm">
+                                <rect key="frame" x="0.0" y="74" width="600" height="55"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-yK-nSb">
+                                <rect key="frame" x="180" y="173" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">la Luna completa un'orbita attorno alla Terra in media ogni 27,321661 giorni in senso anti orario, pari a 27 giorni, 7 ore, 43 minuti e 12 secondi (mese siderale). Coincide con il moto di rotazione lunare.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="9Vh-CT-7uh" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="209" id="AEu-Qk-Ksz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="9Vh-CT-7uh" secondAttribute="trailing" constant="74" id="app-oj-ztX"/>
-                            <constraint firstItem="T9U-T2-5ry" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="900" id="pnm-ys-ePK"/>
+                            <constraint firstItem="cHG-N4-K2i" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="340" id="2r5-fl-gQI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qfX-gZ-y8n" secondAttribute="trailing" constant="-20" id="AA1-B9-4II"/>
+                            <constraint firstItem="S3q-H6-8uP" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="255" id="AOl-De-i3w"/>
+                            <constraint firstItem="Fgw-GX-jGm" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="-20" id="HkC-Kv-2yi"/>
+                            <constraint firstItem="onf-uK-B0p" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="12" id="Kax-l8-HAD"/>
+                            <constraint firstItem="Fgw-GX-jGm" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="81" id="Km1-kf-Ndp"/>
+                            <constraint firstItem="cHG-N4-K2i" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="207" id="QU3-9w-3Oc"/>
+                            <constraint firstItem="S3q-H6-8uP" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="210" id="RK8-r4-Qbe"/>
+                            <constraint firstItem="qfX-gZ-y8n" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="-20" id="WzO-bv-xwG"/>
+                            <constraint firstItem="2C1-EP-hdF" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="81" id="XXL-ZF-MVo"/>
+                            <constraint firstItem="qfX-gZ-y8n" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="59" id="Yck-eV-dyI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fgw-GX-jGm" secondAttribute="trailing" constant="-20" id="aKN-8b-xJa"/>
+                            <constraint firstItem="2C1-EP-hdF" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="-20" id="bnd-6u-0KL"/>
+                            <constraint firstItem="24q-in-C9s" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="300" id="r30-Fx-wU4"/>
+                            <constraint firstItem="24q-in-C9s" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="850" id="sRe-fP-lxW"/>
+                            <constraint firstItem="onf-uK-B0p" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="525" id="tvX-JU-Sh7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cHG-N4-K2i" secondAttribute="trailing" constant="206" id="vlg-Tl-sgH"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2C1-EP-hdF" secondAttribute="trailing" constant="-20" id="xd9-LE-VYb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="constraintAvantiDiCoseLaLuna" destination="sRe-fP-lxW" id="2kc-lr-p0A"/>
+                        <outlet property="constraintIMovimentiDellaLuna" destination="XXL-ZF-MVo" id="lQW-eb-DjZ"/>
+                        <outlet property="constraintImagineImovimentiDellaLuna" destination="AOl-De-i3w" id="GbF-IZ-GVb"/>
+                        <outlet property="constraintInizia" destination="QU3-9w-3Oc" id="qhC-1S-xeB"/>
+                        <outlet property="constraintTextViewCosELaLuna" destination="Kax-l8-HAD" id="Li1-CD-CSP"/>
+                        <outlet property="constraintTitleCosELaLuna" destination="Yck-eV-dyI" id="UY7-TD-BcR"/>
+                        <outlet property="costraintTitleMotodiRivoluzione" destination="Km1-kf-Ndp" id="MAd-Y1-b78"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="msA-PK-c8h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="986" y="339"/>
+            <point key="canvasLocation" x="976" y="339"/>
         </scene>
     </scenes>
     <resources>
-        <image name="DC10FC7C-0F24-454A-9B5F-78B87D4B55E6" width="320" height="460">
+        <image name="0A135A12-E858-46F0-85A5-E6A6273A075D" width="320" height="460">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
@@ -10194,7 +10282,7 @@ AAABAAEAAAEGAAMAAAABAAIAAAERAAQAAAAFAAj80gESAAMAAAABAAEAAAEVAAMAAAABAAQAAAEWAAMA
 AAABAGYAAAEXAAQAAAAFAAj8vgEcAAMAAAABAAEAAAFSAAMAAAABAAEAAAFTAAMAAAAEAAj85odzAAcA
 AAxIAAj87gAAAAAACAAIAAgACAAB/gAAAf4AAAH+AAAB/gAAAQQAAAAACAAB/ggAA/wIAAX6CAAH+AgA
 AQABAAEAAQAADEhMaW5vAhAAAG1udHJSR0IgWFlaIAfOAAIACQAGADEAAGFjc3BNU0ZUAAAAAElFQyBz
-UkdCAAAAAAAAAAAAAAAAAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+UkdCAAAAAAAAAAAAAAABAAD21gABAAAAANMtSFAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
 AAAAAAAAAAAAAAAAAAAAAAAAEWNwcnQAAAFQAAAAM2Rlc2MAAAGEAAAAbHd0cHQAAAHwAAAAFGJrcHQA
 AAIEAAAAFHJYWVoAAAIYAAAAFGdYWVoAAAIsAAAAFGJYWVoAAAJAAAAAFGRtbmQAAAJUAAAAcGRtZGQA
 AALEAAAAiHZ1ZWQAAANMAAAAhnZpZXcAAAPUAAAAJGx1bWkAAAP4AAAAFG1lYXMAAAQMAAAAJHRlY2gA

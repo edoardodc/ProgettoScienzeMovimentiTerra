@@ -11,45 +11,91 @@ import UIKit
 
 class SecondView: UIViewController {
     
-    @IBAction func buttonRuotaTerra2(sender: AnyObject) {
+    ////1
+    @IBAction func buttonInizia(sender: AnyObject) {
         
-        let terra2 = UIImageView()
-        terra2.image = UIImage(named: "Terra")
-        terra2.frame = CGRect(x: 256, y: 229, width: 250, height: 250)
-        self.view.addSubview(terra2)
-        let fullRotation = CGFloat(M_PI * 2)
-        let duration = 2.0
-        let delay = 0.0
-        let options = UIViewKeyframeAnimationOptions.CalculationModeLinear
-        
-        UIView.animateKeyframesWithDuration(duration, delay: delay, options: options, animations: {
-            UIView.addKeyframeWithRelativeStartTime(0, relativeDuration: 1/3, animations: {
-                
-                terra2.transform = CGAffineTransformMakeRotation(1/3 * fullRotation)
-            })
-            UIView.addKeyframeWithRelativeStartTime(1/3, relativeDuration: 1/3, animations: {
-                terra2.transform = CGAffineTransformMakeRotation(2/3 * fullRotation)
-            })
-            UIView.addKeyframeWithRelativeStartTime(2/3, relativeDuration: 1/3, animations: {
-                terra2.transform = CGAffineTransformMakeRotation(3/3 * fullRotation)
-            })
-            
-            }, completion: {finished in
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(4, animations: {
+            self.constraintInizia.constant = -1000
+            self.view.layoutIfNeeded()
         })
-
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(4, animations: {
+        self.constraintImagineImovimentiDellaLuna.constant = 255
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(3, animations: {
+            self.constraintIMovimentiDellaLuna.constant = -1000
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(4, animations: {
+            self.constraintTitleCosELaLuna.constant = 81
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintTextViewCosELaLuna.constant = 12
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.constraintAvantiDiCoseLaLuna.constant = 850
+            self.view.layoutIfNeeded()
+        })
         
     }
     
-    
-    
-    override func viewDidLoad() {
+    @IBAction func AvantiPerAndareAiMotiDiRivoluzione(sender: AnyObject) {
+        
 
-        let terra2 = UIImageView()
-        terra2.image = UIImage(named: "Terra")
-        terra2.frame = CGRect(x: 256, y: 229
-            , width: 250, height: 250)
-        self.view.addSubview(terra2)
+               self.view.layoutIfNeeded()
+        UIView.animateWithDuration(4, animations: {
+            self.constraintTitleCosELaLuna.constant = -100
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(4, animations: {
+            self.constraintTextViewCosELaLuna.constant = -1000
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(4, animations: {
+            self.constraintAvantiDiCoseLaLuna.constant = +1000
+            self.view.layoutIfNeeded()
+        })
+        self.view.layoutIfNeeded()
+        UIView.animateWithDuration(5, animations: {
+            self.costraintTitleMotodiRivoluzione.constant = 81
+            self.view.layoutIfNeeded()
+        })
+        
+        
+        
+    }
+    @IBOutlet weak var constraintIMovimentiDellaLuna: NSLayoutConstraint!
+    @IBOutlet weak var constraintAvantiDiCoseLaLuna: NSLayoutConstraint!
+    @IBOutlet weak var constraintInizia: NSLayoutConstraint!
+    @IBOutlet weak var constraintImagineImovimentiDellaLuna: NSLayoutConstraint!
+     @IBOutlet weak var costraintTitleMotodiRivoluzione: NSLayoutConstraint!
+
+
+    @IBOutlet weak var constraintTextViewCosELaLuna: NSLayoutConstraint!
+    @IBOutlet weak var constraintTitleCosELaLuna: NSLayoutConstraint!
+    override func viewDidLoad() {
     
+
+        constraintInizia.constant = 207
+        constraintImagineImovimentiDellaLuna.constant = +1000
+        constraintIMovimentiDellaLuna.constant = 81
+        constraintTitleCosELaLuna.constant = -1000
+        constraintTextViewCosELaLuna.constant = -1000
+        constraintAvantiDiCoseLaLuna.constant = +1000
+        costraintTitleMotodiRivoluzione.constant = -1000
+        
+        
+        
     }
     
 

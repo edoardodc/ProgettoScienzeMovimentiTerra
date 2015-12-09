@@ -10,6 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    @IBOutlet weak var textView1: UITextView!
+    
+    
   
     @IBAction func buttonToccami(sender: AnyObject) {
         
@@ -102,11 +106,7 @@ class ViewController: UIViewController {
             self.view.layoutIfNeeded()
             self.view.layoutIfNeeded()
         })
-        UIView.animateWithDuration(3, animations: {
-            self.constraintSubTitle2.constant = -1000
-            self.view.layoutIfNeeded()
-        })
-  
+        
         self.view.layoutIfNeeded()
         UIView.animateWithDuration(3, animations: {
             self.constraintLeadingTextView.constant = -1000
@@ -164,16 +164,12 @@ class ViewController: UIViewController {
         
         //////valore constraint2//
         self.view.layoutIfNeeded()
-        UIView.animateWithDuration(3, animations: {
+        UIView.animateWithDuration(2, animations: {
             self.constraintTopTitle2.constant = 81
             self.view.layoutIfNeeded()
             self.view.layoutIfNeeded()
             })
-            UIView.animateWithDuration(3, animations: {
-                self.constraintSubTitle2.constant = 260
-                self.view.layoutIfNeeded()
-            })
-                   self.view.layoutIfNeeded()
+                              self.view.layoutIfNeeded()
         UIView.animateWithDuration(3, animations: {
             self.constraintLeadingTextView.constant = 15
             self.view.layoutIfNeeded()
@@ -208,7 +204,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var constraintLeadingLuna: NSLayoutConstraint!
    
-    @IBOutlet weak var constraintSubTitle2: NSLayoutConstraint!
+
     
     @IBOutlet weak var constraintTerra1: NSLayoutConstraint!
     
@@ -225,8 +221,14 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var constraintTrealingAvanti2: NSLayoutConstraint!
     
+    @IBOutlet weak var textView3: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.textView1.scrollRangeToVisible(NSMakeRange(0, 0))
+            self.textView3.scrollRangeToVisible(NSMakeRange(0, 0))
+        
         
         //////where are now?1/////////////////////////
         constraintLeadingInizia.constant = -1000
@@ -235,7 +237,7 @@ class ViewController: UIViewController {
         constraintLeadingLuna.constant = -1000
         constraintTopTerra.constant = -1000
         constraintTopTitle2.constant = -1000
-        constraintSubTitle2.constant = -1000
+       
 
         constraintTextFieldMotoDIRotazione.constant = +1000
         
