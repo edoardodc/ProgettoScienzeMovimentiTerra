@@ -189,7 +189,7 @@ L'orbita percorsa dalla Terra ha la forma di un ellisse dove il sole occupa uno 
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" patternImage="0A135A12-E858-46F0-85A5-E6A6273A075D" colorSpace="pattern"/>
+                        <color key="tintColor" patternImage="389F5625-1222-4888-94A0-C684B4FA7692" colorSpace="pattern"/>
                         <constraints>
                             <constraint firstItem="txc-BP-w28" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="850" id="018-0z-ho0"/>
                             <constraint firstItem="ARL-jF-5Cg" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="128" id="0a0-fY-XsX"/>
@@ -410,20 +410,38 @@ Il suo simbolo astronomico “☾” è una rappresentazione stilizzata della su
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-yK-nSb">
-                                <rect key="frame" x="180" y="173" width="240" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="bcw-yK-nSb">
+                                <rect key="frame" x="66" y="266" width="701" height="248"/>
                                 <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="248" id="vgA-Yc-BW0"/>
+                                    <constraint firstAttribute="width" constant="701" id="ziQ-rh-0Az"/>
+                                </constraints>
                                 <string key="text">la Luna completa un'orbita attorno alla Terra in media ogni 27,321661 giorni in senso anti orario, pari a 27 giorni, 7 ore, 43 minuti e 12 secondi (mese siderale). Coincide con il moto di rotazione lunare.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EwO-3B-qls">
+                                <rect key="frame" x="285" y="172" width="86" height="48"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Avanti">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonAvantiMotoDiRotazione:" destination="d9C-J3-rx9" eventType="touchUpInside" id="aZL-Nq-CQj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bcw-yK-nSb" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="12" id="1TS-Jn-Ygw"/>
                             <constraint firstItem="cHG-N4-K2i" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="340" id="2r5-fl-gQI"/>
+                            <constraint firstItem="EwO-3B-qls" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="300" id="4a7-pO-aDn"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qfX-gZ-y8n" secondAttribute="trailing" constant="-20" id="AA1-B9-4II"/>
                             <constraint firstItem="S3q-H6-8uP" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="255" id="AOl-De-i3w"/>
                             <constraint firstItem="Fgw-GX-jGm" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="-20" id="HkC-Kv-2yi"/>
@@ -432,10 +450,12 @@ Il suo simbolo astronomico “☾” è una rappresentazione stilizzata della su
                             <constraint firstItem="cHG-N4-K2i" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="207" id="QU3-9w-3Oc"/>
                             <constraint firstItem="S3q-H6-8uP" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="210" id="RK8-r4-Qbe"/>
                             <constraint firstItem="qfX-gZ-y8n" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="-20" id="WzO-bv-xwG"/>
+                            <constraint firstItem="EwO-3B-qls" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="850" id="XSb-g4-4wQ"/>
                             <constraint firstItem="2C1-EP-hdF" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="81" id="XXL-ZF-MVo"/>
                             <constraint firstItem="qfX-gZ-y8n" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="59" id="Yck-eV-dyI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Fgw-GX-jGm" secondAttribute="trailing" constant="-20" id="aKN-8b-xJa"/>
                             <constraint firstItem="2C1-EP-hdF" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="-20" id="bnd-6u-0KL"/>
+                            <constraint firstItem="bcw-yK-nSb" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="525" id="hO1-dd-JwZ"/>
                             <constraint firstItem="24q-in-C9s" firstAttribute="leading" secondItem="ccK-66-ufC" secondAttribute="leadingMargin" constant="300" id="r30-Fx-wU4"/>
                             <constraint firstItem="24q-in-C9s" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="850" id="sRe-fP-lxW"/>
                             <constraint firstItem="onf-uK-B0p" firstAttribute="top" secondItem="fF6-JE-99t" secondAttribute="bottom" constant="525" id="tvX-JU-Sh7"/>
@@ -444,11 +464,14 @@ Il suo simbolo astronomico “☾” è una rappresentazione stilizzata della su
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="constraintAvantiDalMotoDirotazione" destination="EwO-3B-qls" id="zXE-WJ-PeX"/>
                         <outlet property="constraintAvantiDiCoseLaLuna" destination="sRe-fP-lxW" id="2kc-lr-p0A"/>
+                        <outlet property="constraintAvantiMotodirotazione" destination="4a7-pO-aDn" id="1BO-cc-18v"/>
                         <outlet property="constraintIMovimentiDellaLuna" destination="XXL-ZF-MVo" id="lQW-eb-DjZ"/>
                         <outlet property="constraintImagineImovimentiDellaLuna" destination="AOl-De-i3w" id="GbF-IZ-GVb"/>
                         <outlet property="constraintInizia" destination="QU3-9w-3Oc" id="qhC-1S-xeB"/>
                         <outlet property="constraintTextViewCosELaLuna" destination="Kax-l8-HAD" id="Li1-CD-CSP"/>
+                        <outlet property="constraintTextViewMotoDiRivoluzione" destination="1TS-Jn-Ygw" id="hnS-Eu-Z08"/>
                         <outlet property="constraintTitleCosELaLuna" destination="Yck-eV-dyI" id="UY7-TD-BcR"/>
                         <outlet property="costraintTitleMotodiRivoluzione" destination="Km1-kf-Ndp" id="MAd-Y1-b78"/>
                     </connections>
@@ -458,7 +481,7 @@ Il suo simbolo astronomico “☾” è una rappresentazione stilizzata della su
         </scene>
     </scenes>
     <resources>
-        <image name="0A135A12-E858-46F0-85A5-E6A6273A075D" width="320" height="460">
+        <image name="389F5625-1222-4888-94A0-C684B4FA7692" width="320" height="460">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGPT5YJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK4HCBMU
 GR4fIyQrLjE3OlUkbnVsbNUJCgsMDQ4PEBESVk5TU2l6ZVYkY2xhc3NcTlNJbWFnZUZsYWdzVk5TUmVw
