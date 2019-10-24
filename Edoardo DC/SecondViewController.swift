@@ -48,9 +48,7 @@ class SecondView: UIViewController {
     }
     
     @IBAction func AvantiPerAndareAiMotiDiRivoluzione(sender: AnyObject) {
-        
-
-               self.view.layoutIfNeeded()
+        self.view.layoutIfNeeded()
         UIView.animateWithDuration(4, animations: {
             self.constraintTitleCosELaLuna.constant = -100
             self.view.layoutIfNeeded()
@@ -110,18 +108,14 @@ class SecondView: UIViewController {
     @IBOutlet weak var constraintAvantiDalMotoDirotazione: UIButton!
     @IBOutlet weak var constraintInizia: NSLayoutConstraint!
     @IBOutlet weak var constraintImagineImovimentiDellaLuna: NSLayoutConstraint!
-     @IBOutlet weak var costraintTitleMotodiRivoluzione: NSLayoutConstraint!
+    @IBOutlet weak var costraintTitleMotodiRivoluzione: NSLayoutConstraint!
     @IBOutlet weak var constraintTextViewMotoDiRivoluzione: NSLayoutConstraint!
 
     @IBOutlet weak var constraintAvantiMotodirotazione: NSLayoutConstraint!
     @IBOutlet weak var constraintTextViewCosELaLuna: NSLayoutConstraint!
     @IBOutlet weak var constraintTitleCosELaLuna: NSLayoutConstraint!
-    
-    
-    
-    override func viewDidLoad() {
-    
 
+    override func viewDidLoad() {
         constraintInizia.constant = 207
         constraintImagineImovimentiDellaLuna.constant = +1000
         constraintIMovimentiDellaLuna.constant = 81
@@ -130,9 +124,6 @@ class SecondView: UIViewController {
         constraintAvantiDiCoseLaLuna.constant = +1000
         costraintTitleMotodiRivoluzione.constant = -1000
         constraintTextViewMotoDiRivoluzione.constant = +1000
-        constraintAvantiMotodirotazione.constant = -1000
-        
+        constraintAvantiMotodirotazione.constant = -1000        
     }
-    
-
 }
